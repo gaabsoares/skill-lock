@@ -1,0 +1,25 @@
+{
+  "sidecar_version": 1,
+  "generator": "skill-lock",
+  "generator_version": "0.1.0",
+  "resolutions": {
+    "clawhub:nextfrontierbuilds/elite-longterm-memory@1.2.3": {
+      "resolved_at": "2026-08-18T17:24:50.774Z"
+    },
+    "clawhub:pskoett/self-improving-agent@4.0.2": {
+      "resolved_at": "2026-08-18T17:25:23.400Z"
+    },
+    "clawhub:uroboros1205/prismfy-search@1.3.8": {
+      "resolved_at": "2026-08-18T17:25:01.713Z"
+    },
+    "git+https://github.com/anthropics/skills@0a64e398ec6bb34a494f0c347e8ccae53a862f8e#skills/mcp-builder": {
+      "resolved_at": "2026-08-18T17:25:25.804Z"
+    },
+    "mcp:io.github.brave/brave-search-mcp-server@2.1.0": {
+      "resolved_at": "2026-08-18T17:25:23.867Z"
+    },
+    "mcp:io.github.domdomegg/airtable-mcp-server@1.14.0": {
+      "resolved_at": "2026-08-18T17:25:24.365Z"
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "sidecar_version": 1,
+  "generator": "skill-lock",
+  "generator_version": "0.1.0",
+  "resolutions": {
+    "clawhub:conorkenn/openclaw-github-assistant@1.0.2": {
+      "resolved_at": "2026-08-18T17:07:59.139Z"
+    }
+  }
+}

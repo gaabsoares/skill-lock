@@ -1,0 +1,227 @@
+{
+  "lockfile_version": 1,
+  "generator": "skill-lock",
+  "entries": [
+    {
+      "ref": "clawhub:nextfrontierbuilds/elite-longterm-memory@1.2.3",
+      "kind": "clawhub",
+      "pinned": true,
+      "resolved": {
+        "api_url": "https://clawhub.ai/api/v1/skills/elite-longterm-memory/versions/1.2.3?owner=nextfrontierbuilds",
+        "owner": "nextfrontierbuilds",
+        "registry": "clawhub.ai",
+        "slug": "elite-longterm-memory",
+        "url": "https://clawhub.ai/nextfrontierbuilds/skills/elite-longterm-memory",
+        "version": "1.2.3"
+      },
+      "digest": "sha256:99f62529e6a73e3d999d183754256b1999cdce9db372e0c95b6bf38d88631c50",
+      "digest_covers": "file-contents",
+      "permissions": {
+        "status": "declared",
+        "manifest": "SKILL.md:metadata.openclaw",
+        "filesystem": null,
+        "network": null,
+        "secrets": [
+          "env:OPENAI_API_KEY"
+        ],
+        "exec": [
+          "plugin:memory-lancedb"
+        ]
+      },
+      "manifest_fields": {
+        "file_count": 5,
+        "frontmatter_author": "NextFrontierBuilds",
+        "frontmatter_name": "elite-longterm-memory",
+        "frontmatter_version": "1.2.3",
+        "license": null,
+        "openclaw_metadata_sha256": "31b3820ec532a5cdd7132a706a10f74041d8886dd328cc8cb19edbacbe1d9dcc",
+        "owner": "nextfrontierbuilds",
+        "skill_md_sha256": "56bb341604f951985e451df450744d1d78cd9ba905b6df8952084343b35a95b3",
+        "version": "1.2.3"
+      }
+    },
+    {
+      "ref": "clawhub:pskoett/self-improving-agent@4.0.2",
+      "kind": "clawhub",
+      "pinned": true,
+      "resolved": {
+        "api_url": "https://clawhub.ai/api/v1/skills/self-improving-agent/versions/4.0.2?owner=pskoett",
+        "owner": "pskoett",
+        "registry": "clawhub.ai",
+        "slug": "self-improving-agent",
+        "url": "https://clawhub.ai/pskoett/skills/self-improving-agent",
+        "version": "4.0.2"
+      },
+      "digest": "sha256:ffb2b6789fc3fee8016dad3050d722343bbf0f1a541bc65f65563fc3b8c630d8",
+      "digest_covers": "file-contents",
+      "permissions": {
+        "status": "undeclared",
+        "manifest": "SKILL.md",
+        "filesystem": null,
+        "network": null,
+        "secrets": null,
+        "exec": null
+      },
+      "manifest_fields": {
+        "file_count": 15,
+        "frontmatter_name": "self-improving-agent",
+        "frontmatter_version": "4.0.2",
+        "license": "MIT-0",
+        "owner": "pskoett",
+        "skill_md_sha256": "eff889950f23bb8a3de90cd617481bbf2557f9495f884bd5b1e9b7604a20817c",
+        "version": "4.0.2"
+      }
+    },
+    {
+      "ref": "clawhub:uroboros1205/prismfy-search@1.3.8",
+      "kind": "clawhub",
+      "pinned": true,
+      "resolved": {
+        "api_url": "https://clawhub.ai/api/v1/skills/prismfy-search/versions/1.3.8?owner=uroboros1205",
+        "owner": "uroboros1205",
+        "registry": "clawhub.ai",
+        "slug": "prismfy-search",
+        "url": "https://clawhub.ai/uroboros1205/skills/prismfy-search",
+        "version": "1.3.8"
+      },
+      "digest": "sha256:891e8f61327799dfe8acf0b1a42b2a8a16eb7be6495b9b975867069a66062a41",
+      "digest_covers": "file-contents",
+      "permissions": {
+        "status": "declared",
+        "manifest": "SKILL.md:metadata.openclaw",
+        "filesystem": null,
+        "network": null,
+        "secrets": [
+          "env:PRISMFY_API_KEY"
+        ],
+        "exec": [
+          "bin:curl",
+          "bin:jq"
+        ]
+      },
+      "manifest_fields": {
+        "file_count": 6,
+        "frontmatter_name": "prismfy-search",
+        "frontmatter_version": "1.2.1",
+        "license": "MIT-0",
+        "openclaw_metadata_sha256": "4c840316e0b740e9239dd6587be19497633021f0d1d43e162b8f22f4946188b6",
+        "owner": "uroboros1205",
+        "skill_md_sha256": "43f0df0cafe65cab92767708b1473d985a0ff09c765b3feffee23dca2c10676f",
+        "version": "1.3.8"
+      }
+    },
+    {
+      "ref": "git+https://github.com/anthropics/skills@0a64e398ec6bb34a494f0c347e8ccae53a862f8e#skills/mcp-builder",
+      "kind": "git",
+      "pinned": true,
+      "resolved": {
+        "commit": "0a64e398ec6bb34a494f0c347e8ccae53a862f8e",
+        "host": "github.com",
+        "owner": "anthropics",
+        "repo": "skills",
+        "rev_requested": "0a64e398ec6bb34a494f0c347e8ccae53a862f8e",
+        "subdir": "skills/mcp-builder",
+        "url": "https://github.com/anthropics/skills/tree/0a64e398ec6bb34a494f0c347e8ccae53a862f8e/skills/mcp-builder"
+      },
+      "digest": "sha256:4195d12779ebc28242fbca4143e2a91b6fabc5e3a3ec6ccafbc188c0567f9a72",
+      "digest_covers": "git-tree",
+      "permissions": {
+        "status": "undeclared",
+        "manifest": "SKILL.md",
+        "filesystem": null,
+        "network": null,
+        "secrets": null,
+        "exec": null
+      },
+      "manifest_fields": {
+        "commit": "0a64e398ec6bb34a494f0c347e8ccae53a862f8e",
+        "commit_date": "2026-08-18T16:02:05Z",
+        "file_count": 10,
+        "frontmatter_license": "Complete terms in LICENSE.txt",
+        "frontmatter_name": "mcp-builder",
+        "manifest_path": "SKILL.md",
+        "manifest_sha256": "0f4592dcb53cf2b5d6b7febee6b4152018b565551a1c29e3c612f57b218ab295",
+        "tree_sha": "0a64e398ec6bb34a494f0c347e8ccae53a862f8e"
+      }
+    },
+    {
+      "ref": "mcp:io.github.brave/brave-search-mcp-server@2.1.0",
+      "kind": "mcp",
+      "pinned": true,
+      "resolved": {
+        "name": "io.github.brave/brave-search-mcp-server",
+        "registry": "registry.modelcontextprotocol.io",
+        "schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+        "url": "https://registry.modelcontextprotocol.io/v0.1/servers/io.github.brave%2Fbrave-search-mcp-server/versions/2.1.0",
+        "version": "2.1.0"
+      },
+      "digest": "sha256:3df4189f809199a92770cd6e50161ac33730a4fc251f5ea7dc1daf69b686689d",
+      "digest_covers": "registry-record",
+      "permissions": {
+        "status": "declared",
+        "manifest": "mcp-registry:server.json",
+        "filesystem": null,
+        "network": [
+          "transport:stdio",
+          "url:https://registry.npmjs.org"
+        ],
+        "secrets": [
+          "secret:BRAVE_API_KEY"
+        ],
+        "exec": [
+          "package:npm/@brave/brave-search-mcp-server@2.1.0"
+        ]
+      },
+      "manifest_fields": {
+        "description_sha256": "cfe30ebf1f477832447089583c7381a9f5fa52ef1f8587026ad63e2786794ec2",
+        "name": "io.github.brave/brave-search-mcp-server",
+        "package_count": 1,
+        "remote_count": 0,
+        "repository": "https://github.com/brave/brave-search-mcp-server",
+        "schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+        "version": "2.1.0"
+      }
+    },
+    {
+      "ref": "mcp:io.github.domdomegg/airtable-mcp-server@1.14.0",
+      "kind": "mcp",
+      "pinned": true,
+      "resolved": {
+        "name": "io.github.domdomegg/airtable-mcp-server",
+        "registry": "registry.modelcontextprotocol.io",
+        "schema": "https://static.modelcontextprotocol.io/schemas/2025-10-17/server.schema.json",
+        "url": "https://registry.modelcontextprotocol.io/v0.1/servers/io.github.domdomegg%2Fairtable-mcp-server/versions/1.14.0",
+        "version": "1.14.0"
+      },
+      "digest": "sha256:2babc854114bebf81a921ee60fdd7ccbff1ae78cb5c85bfafe18973e448f150a",
+      "digest_covers": "registry-record",
+      "permissions": {
+        "status": "declared",
+        "manifest": "mcp-registry:server.json",
+        "filesystem": null,
+        "network": [
+          "transport:stdio"
+        ],
+        "secrets": [
+          "secret:AIRTABLE_API_KEY"
+        ],
+        "exec": [
+          "package:mcpb/https://github.com/domdomegg/airtable-mcp-server/releases/download/v1.14.0/airtable-mcp-server.mcpb@1.14.0",
+          "package:npm/airtable-mcp-server@1.14.0",
+          "package:oci/docker.io/domdomegg/airtable-mcp-server:1.14.0",
+          "runtime:npx"
+        ]
+      },
+      "manifest_fields": {
+        "description_sha256": "7b52c89d35805d212e25e40ad6fb8eb90c2900feb71eb8aa0907e4d3e9f3c72a",
+        "name": "io.github.domdomegg/airtable-mcp-server",
+        "package_count": 3,
+        "remote_count": 0,
+        "repository": "https://github.com/domdomegg/airtable-mcp-server.git",
+        "schema": "https://static.modelcontextprotocol.io/schemas/2025-10-17/server.schema.json",
+        "version": "1.14.0",
+        "website": "https://github.com/domdomegg/airtable-mcp-server#readme"
+      }
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "name": "skill-lock",
+  "version": "0.1.0",
+  "description": "Lockfile, provenance and permission-diff CLI for AI agent extensions: ClawHub skills, MCP registry servers, and git-hosted extensions.",
+  "keywords": [
+    "mcp",
+    "lockfile",
+    "supply-chain",
+    "provenance",
+    "agent",
+    "skills",
+    "openclaw",
+    "clawhub",
+    "permissions"
+  ],
+  "license": "MIT",
+  "author": "gaabsoares (https://github.com/gaabsoares)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gaabsoares/skill-lock.git"
+  },
+  "homepage": "https://github.com/gaabsoares/skill-lock#readme",
+  "bugs": {
+    "url": "https://github.com/gaabsoares/skill-lock/issues"
+  },
+  "type": "module",
+  "engines": {
+    "node": ">=22.18.0"
+  },
+  "bin": {
+    "skill-lock": "dist/cli.js"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "THREATMODEL.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "node --test --test-reporter=spec \"test/*.test.ts\"",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "yaml": "^2.8.1",
+    "zod": "^4.1.12"
+  },
+  "devDependencies": {
+    "@types/node": "^22.18.8",
+    "typescript": "^5.9.3"
+  }
+}

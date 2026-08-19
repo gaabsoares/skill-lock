@@ -1,0 +1,38 @@
+{
+  "lockfile_version": 1,
+  "generator": "skill-lock",
+  "entries": [
+    {
+      "ref": "clawhub:conorkenn/openclaw-github-assistant@1.0.1",
+      "kind": "clawhub",
+      "pinned": true,
+      "resolved": {
+        "api_url": "https://clawhub.ai/api/v1/skills/openclaw-github-assistant/versions/1.0.1?owner=conorkenn",
+        "owner": "conorkenn",
+        "registry": "clawhub.ai",
+        "slug": "openclaw-github-assistant",
+        "url": "https://clawhub.ai/conorkenn/skills/openclaw-github-assistant",
+        "version": "1.0.1"
+      },
+      "digest": "sha256:f591ec9af05a74e85aaa8bf1bf41fe86ddb08a3c7ae5df4bcd7e031f2de93f18",
+      "digest_covers": "file-contents",
+      "permissions": {
+        "status": "undeclared",
+        "manifest": "SKILL.md",
+        "filesystem": null,
+        "network": null,
+        "secrets": null,
+        "exec": null
+      },
+      "manifest_fields": {
+        "file_count": 4,
+        "frontmatter_name": "github",
+        "license": null,
+        "openclaw_metadata_sha256": "986ec53fb09b67fc219f76841eb37ca59a9a341f636a3d06c2ce9086ecab5deb",
+        "owner": "conorkenn",
+        "skill_md_sha256": "c0c595879dceab5751d1f84ce33c7a2c2562f5b0b0ae0afdd227367be7a256e3",
+        "version": "1.0.1"
+      }
+    }
+  ]
+}
