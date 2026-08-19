@@ -24,10 +24,10 @@ skill-lock does not fix the metadata gap. It records exactly what is and is not 
 ## Install and use
 
 ```sh
-npx github:gaabsoares/skill-lock add clawhub:conorkenn/openclaw-github-assistant@1.0.1
-npx github:gaabsoares/skill-lock add mcp:io.github.brave/brave-search-mcp-server@2.1.0
-npx github:gaabsoares/skill-lock verify
-npx github:gaabsoares/skill-lock diff agents.lock other.lock
+npx @gaabsoares/skill-lock add clawhub:conorkenn/openclaw-github-assistant@1.0.1
+npx @gaabsoares/skill-lock add mcp:io.github.brave/brave-search-mcp-server@2.1.0
+npx @gaabsoares/skill-lock verify
+npx @gaabsoares/skill-lock diff agents.lock other.lock
 ```
 
 `add` writes `agents.lock`. Commit it. `verify` re-resolves every entry and exits non-zero on drift, which is the CI seam.
@@ -145,7 +145,7 @@ This is verified two ways: a test asserts byte-identical serialisation under shu
 ## In CI
 
 ```yaml
-- run: npx github:gaabsoares/skill-lock verify --strict
+- run: npx @gaabsoares/skill-lock verify --strict
 ```
 
 Exit codes:
@@ -182,7 +182,7 @@ Roadmap ideas, none of them promises: signed local attestations; policy-as-code 
 
 **Against Snyk Agent Scan.** Different jobs, and they compose. Snyk Agent Scan looks inside an extension for malicious and vulnerable patterns: it answers "is this thing bad?". skill-lock answers "is this the same thing I reviewed, and does it now want more?". A scanner that passes an extension today says nothing about the version that gets pulled tomorrow; a lockfile that pins that version says nothing about whether it was malicious when pinned. Running both is strictly better than running either. If you can only run one and you have never reviewed your extensions, run the scanner first.
 
-**Related.** `luisalima/skills-lock` is a separate, unaffiliated project with a similar name (pinned commits and content hashes for agent skills).
+**Related.** `luisalima/skills-lock` is a separate, unaffiliated project with a similar name (pinned commits and content hashes for agent skills). [`skilllock`](https://www.npmjs.com/package/skilllock) on npm (May 2026) is another unaffiliated project in the same space (reproducible lockfiles and verification for Agent Skills); it predates this tool and is why this package publishes under a scope.
 
 ## Rate limits
 

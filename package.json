@@ -1,5 +1,5 @@
 {
-  "name": "skill-lock",
+  "name": "@gaabsoares/skill-lock",
   "version": "0.1.0",
   "description": "Lockfile, provenance and permission-diff CLI for AI agent extensions: ClawHub skills, MCP registry servers, and git-hosted extensions.",
   "keywords": [
